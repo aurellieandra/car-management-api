@@ -1,0 +1,1931 @@
+{
+	"info": {
+		"_postman_id": "f1869d22-e18b-4dc0-bd98-c26749d9016c",
+		"name": "challenge-06",
+		"description": "Car Management API, Challenge 06 for Full-stack Web Development, Binar Academy, Kampus Merdeka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "register admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Aliya\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"aliya-a@mail.com\",\r\n    \"password\": \"aliya-a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/register-admin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"register-admin"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin untuk melakukan registrasi admin (dapat melalui Seed), baik SuperAdmin maupun Admin"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Aliya\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"aliya-a@mail.com\",\r\n    \"password\": \"aliya-a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/register-admin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-admin"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "276"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"114-2V/FJlRvOn24N7MFvpehYXNaPas\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:03:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"User added succesfully.\",\n    \"data\": {\n        \"id\": 8,\n        \"nama\": \"Aliya\",\n        \"class\": \"Admin\",\n        \"email\": \"aliya-a@mail.com\",\n        \"password\": \"$2b$10$uIYDpPa1de.74Ko3q1xBSe3rhNSY.EnmBCddcwNJTZzvHUMvPacZ2\",\n        \"updatedAt\": \"2022-05-13T13:03:16.266Z\",\n        \"createdAt\": \"2022-05-13T13:03:16.266Z\"\n    }\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/register-admin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-admin"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:07:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin dan Admin untuk melihat data user, baik yang Available nya True atau False (yang sudah di soft delete)"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/users",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1352"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"548-UJaknRIeiYb4ng9NpLN0frMVAxg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:01:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nama\": \"Diandra\",\n            \"class\": \"SuperAdmin\",\n            \"email\": \"diandra-sa@mail.com\",\n            \"password\": \"$2b$10$5U4QcNpj5DR96vIAL19UYOl7FMmxKBY1n/WtJFasvO2TGo.Vc6U6u\",\n            \"createdAt\": \"2022-05-13T06:00:37.857Z\",\n            \"updatedAt\": \"2022-05-13T06:00:37.857Z\"\n        },\n        {\n            \"id\": 2,\n            \"nama\": \"Andra\",\n            \"class\": \"SuperAdmin\",\n            \"email\": \"andra-sa@mail.com\",\n            \"password\": \"$2b$10$oFuwwP2mG5em4kyEAEpGX.YRRP1WkDP79Bqhi.ZhmVxmrZlSr7y66\",\n            \"createdAt\": \"2022-05-13T06:07:10.117Z\",\n            \"updatedAt\": \"2022-05-13T06:07:10.117Z\"\n        },\n        {\n            \"id\": 3,\n            \"nama\": \"Syifa\",\n            \"class\": \"Member\",\n            \"email\": \"syifa-m@mail.com\",\n            \"password\": \"$2b$10$tjkBySc3w3eS2pmJR2kBAeGP8aMe/qZEZ3VaR19QsHsz1BVZu7lBW\",\n            \"createdAt\": \"2022-05-13T06:37:58.326Z\",\n            \"updatedAt\": \"2022-05-13T06:37:58.326Z\"\n        },\n        {\n            \"id\": 4,\n            \"nama\": \"Fitri\",\n            \"class\": \"Admin\",\n            \"email\": \"fitri-a@mail.com\",\n            \"password\": \"$2b$10$ZUA7ufKXr6ikOAUxSa0cVeTSuwTwjbZlUhiFllxUV5iulnVECUOku\",\n            \"createdAt\": \"2022-05-13T07:18:29.842Z\",\n            \"updatedAt\": \"2022-05-13T07:18:29.842Z\"\n        },\n        {\n            \"id\": 5,\n            \"nama\": \"Elsa\",\n            \"class\": \"Admin\",\n            \"email\": \"elsa-m@mail.com\",\n            \"password\": \"$2b$10$gnqCT3/T8HaDXLyi670Xk.tQv3Jydt.29/jqXcOdUw6w5ulJ48qbC\",\n            \"createdAt\": \"2022-05-13T10:50:11.706Z\",\n            \"updatedAt\": \"2022-05-13T10:50:11.706Z\"\n        },\n        {\n            \"id\": 6,\n            \"nama\": \"Sample\",\n            \"class\": \"Admin\",\n            \"email\": \"elsa-m@mail.com\",\n            \"password\": \"$2b$10$6L6aZhfjQyF.lqAm0ioDgORhZ1M3GuAVUrjes0a5gN01nYoBPyEJ.\",\n            \"createdAt\": \"2022-05-13T12:47:42.896Z\",\n            \"updatedAt\": \"2022-05-13T12:47:42.896Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN5aWZhLW1AbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCR0amtCeVNjM3czZVMycG1KUjJrQkFlR1A4YU1lL3FaRVozVmFSMTlRc0hzejFCVlp1N2xCVyIsImlhdCI6MTY1MjQzNDIxN30.R5oAR-KAw1tWq0a0HVnBvobvPMbgxGWercOFAkVvvME",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/users",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-7UrAktdQR+9l/A3Ped1JYdYUoBA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 12:56:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User is not authorized.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "register member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Alvia\",\r\n    \"email\" : \"alvia-m@mail.com\",\r\n    \"password\": \"alvia-m\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/register-member",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"register-member"
+							]
+						},
+						"description": "Boleh diakses oleh siapa saja untuk registrasi sebagai member."
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Alvia\",\r\n    \"email\" : \"alvia-m@mail.com\",\r\n    \"password\": \"alvia-m\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/register-member",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-member"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "277"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"115-WuxDArSMJWHSe7mLLpCuOXKd0Lo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:04:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"User added succesfully.\",\n    \"data\": {\n        \"id\": 9,\n        \"nama\": \"Alvia\",\n        \"class\": \"Member\",\n        \"email\": \"alvia-m@mail.com\",\n        \"password\": \"$2b$10$kJHXtz81Ev1669E2ODYKqebLt1Rykh9jJWGwH.JXPah2dlPuiXf02\",\n        \"updatedAt\": \"2022-05-13T13:04:57.851Z\",\n        \"createdAt\": \"2022-05-13T13:04:57.851Z\"\n    }\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/register-member",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-member"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:06:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"seed-diandra-sa@mail.com\",\r\n    \"password\": \"diandra-sa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						},
+						"description": "Setelah melakukan registrasi, lakukan login berdasarkan email dan password yang telah didaftarkan. Setelah login, nanti akan diberikan token untuk dapat digunakan CRUD untuk data mobil (hanya untuk Super Admin dan Admin) dan melihat data mobil yang tersedia (berlaku untuk semua user yang telah teregister)."
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"diandra-sa@mail.com\",\r\n    \"password\": \"diandra-sa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "464"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d0-Agl52dWVKcblKK9SgjYpMohT9X8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 12:58:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"User found.\",\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"nama\": \"Diandra\",\n            \"class\": \"SuperAdmin\",\n            \"email\": \"diandra-sa@mail.com\",\n            \"createdAt\": \"2022-05-13T06:00:37.857Z\",\n            \"updatedAt\": \"2022-05-13T06:00:37.857Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po\"\n    }\n}"
+						},
+						{
+							"name": "request failed (not match)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"diandra-sa@mail.com\",\r\n    \"password\": \"diandra\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-JD3MgIHwVFvjGAUa8QLs6iq4lxM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 12:58:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 404,\n    \"message\": \"Email and password not match.\"\n}"
+						},
+						{
+							"name": "request failed (not found)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"diandra-saa@mail.com\",\r\n    \"password\": \"diandra-sa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-WL8+n7At6JSOlryQuwH67cWt8j8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 12:59:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 404,\n    \"message\": \"User not found.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "current user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN5aWZhLW1AbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCR0amtCeVNjM3czZVMycG1KUjJrQkFlR1A4YU1lL3FaRVozVmFSMTlRc0hzejFCVlp1N2xCVyIsImlhdCI6MTY1MjQzNDIxN30.R5oAR-KAw1tWq0a0HVnBvobvPMbgxGWercOFAkVvvME",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/users/info",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"info"
+							]
+						},
+						"description": "Untuk dapat mengetahui user milik siapa yang sedang digunakan sekarang, token yang didapatkan dari login sebelumnya diletakkan di header untuk dapat dilihat siapa pemilik token tersebut."
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN5aWZhLW1AbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCR0amtCeVNjM3czZVMycG1KUjJrQkFlR1A4YU1lL3FaRVozVmFSMTlRc0hzejFCVlp1N2xCVyIsImlhdCI6MTY1MjQzNDIxN30.R5oAR-KAw1tWq0a0HVnBvobvPMbgxGWercOFAkVvvME",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/users/info",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"info"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "274"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"112-gvBCxnNm20ANprW6g67qy5SZNcw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:03:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"User has been found.\",\n    \"data\": {\n        \"id\": 3,\n        \"nama\": \"Syifa\",\n        \"class\": \"Member\",\n        \"email\": \"syifa-m@mail.com\",\n        \"password\": \"$2b$10$tjkBySc3w3eS2pmJR2kBAeGP8aMe/qZEZ3VaR19QsHsz1BVZu7lBW\",\n        \"createdAt\": \"2022-05-13T06:37:58.326Z\",\n        \"updatedAt\": \"2022-05-13T06:37:58.326Z\"\n    }\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN5aWZhLW1AbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCR0amtCeVNjM3czZVMycG1KUjJrQkFlR1A4YU1lL3FaRVozVmFSMTlRc0hzejFCVlp1N2xCVyIsImlhdCI6MTY1MjQzNDIxN30.R5oAR-KAw1tWq0a0HVnBvobvPMbgxGWercOFAkVvvME",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/users/info",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"info"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:08:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				}
+			],
+			"description": "Folder \"users\" untuk mengurus request berkaitan dengan user Super Admin, Admin, dan Member.\n\n*   Terdapat request **Register Admin** yang hanya bisa dilakukan oleh SuperAdmin (terdapat Seed yang tersedia)\n*   Terdapat request **Get All Users** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Register Member** dan **Login** yang bisa dilakukan oleh siapa saja.\n*   Terdapat request **Current User** yang hanya bisa dilakukan oleh SuperAdmin, Admin, dan Member"
+		},
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "get all cars",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						},
+						"description": "Hanya bisa diakses oleh SuperAdmin dan Admin untuk melihat keseluruhan data mobil, baik yang \"available\" nya \"true\" ataupun \"false\""
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1244"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4dc-Nn0Gq9lAipzkTRpkJVmSm1UhzCo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:09:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"nama\": \"Honda CRV\",\n            \"tipe\": \"SUV\",\n            \"deskripsi\": \"Gray Car\",\n            \"ukuran\": \"Large\",\n            \"available\": \"true\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": null,\n            \"updatedBy\": null,\n            \"createdAt\": \"2022-05-13T07:33:47.000Z\",\n            \"updatedAt\": \"2022-05-13T07:33:47.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"nama\": \"Suzuki APV\",\n            \"tipe\": \"Van/ Mini Bus\",\n            \"deskripsi\": \"Black Car\",\n            \"ukuran\": \"Medium\",\n            \"available\": \"true\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": null,\n            \"updatedBy\": null,\n            \"createdAt\": \"2022-05-13T07:35:15.996Z\",\n            \"updatedAt\": \"2022-05-13T07:35:15.996Z\"\n        },\n        {\n            \"id\": 1,\n            \"nama\": \"Toyota Rush\",\n            \"tipe\": \"SUV\",\n            \"deskripsi\": \"White Car\",\n            \"ukuran\": \"Large\",\n            \"available\": \"true\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": null,\n            \"updatedBy\": \"Diandra\",\n            \"createdAt\": \"2022-05-13T07:29:19.081Z\",\n            \"updatedAt\": \"2022-05-13T07:44:34.113Z\"\n        },\n        {\n            \"id\": 4,\n            \"nama\": \"BMW M3\",\n            \"tipe\": \"Convertible\",\n            \"deskripsi\": \"Silver Car\",\n            \"ukuran\": \"Medium\",\n            \"available\": \"false\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": \"Diandra\",\n            \"updatedBy\": null,\n            \"createdAt\": \"2022-05-13T07:46:21.673Z\",\n            \"updatedAt\": \"2022-05-13T07:49:26.299Z\"\n        },\n        {\n            \"id\": 5,\n            \"nama\": \"Katana\",\n            \"tipe\": \"Off Roader\",\n            \"deskripsi\": \"Black Matte Car\",\n            \"ukuran\": \"Small\",\n            \"available\": \"false\",\n            \"createdBy\": \"Fitri\",\n            \"deletedBy\": \"Fitri\",\n            \"updatedBy\": \"Fitri\",\n            \"createdAt\": \"2022-05-13T09:47:53.681Z\",\n            \"updatedAt\": \"2022-05-13T09:49:01.697Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:10:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get cars true",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/cars/true",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"true"
+							]
+						},
+						"description": "Bisa diakses oleh user yang teregister (Super Admin, Admin, dan Member) untuk melihat data mobil dengan \"available\" nya \"true\" atau yang belum di soft-delete oleh user."
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"true"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "746"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ea-UzobawjU4Ebau0x9JdteoFvA2UY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:10:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"nama\": \"Honda CRV\",\n            \"tipe\": \"SUV\",\n            \"deskripsi\": \"Gray Car\",\n            \"ukuran\": \"Large\",\n            \"available\": \"true\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": null,\n            \"updatedBy\": null,\n            \"createdAt\": \"2022-05-13T07:33:47.000Z\",\n            \"updatedAt\": \"2022-05-13T07:33:47.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"nama\": \"Suzuki APV\",\n            \"tipe\": \"Van/ Mini Bus\",\n            \"deskripsi\": \"Black Car\",\n            \"ukuran\": \"Medium\",\n            \"available\": \"true\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": null,\n            \"updatedBy\": null,\n            \"createdAt\": \"2022-05-13T07:35:15.996Z\",\n            \"updatedAt\": \"2022-05-13T07:35:15.996Z\"\n        },\n        {\n            \"id\": 1,\n            \"nama\": \"Toyota Rush\",\n            \"tipe\": \"SUV\",\n            \"deskripsi\": \"White Car\",\n            \"ukuran\": \"Large\",\n            \"available\": \"true\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": null,\n            \"updatedBy\": \"Diandra\",\n            \"createdAt\": \"2022-05-13T07:29:19.081Z\",\n            \"updatedAt\": \"2022-05-13T07:44:34.113Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"true"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:09:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get cars false",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/cars/false",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"false"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin dan Admin untuk melihat data mobil yang telah di soft delete, yaitu \"available\" nya \"false\""
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/false",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"false"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "521"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"209-ja4siCp6Hgamal9bAPLihCCqXIo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:11:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"nama\": \"BMW M3\",\n            \"tipe\": \"Convertible\",\n            \"deskripsi\": \"Silver Car\",\n            \"ukuran\": \"Medium\",\n            \"available\": \"false\",\n            \"createdBy\": \"Diandra\",\n            \"deletedBy\": \"Diandra\",\n            \"updatedBy\": null,\n            \"createdAt\": \"2022-05-13T07:46:21.673Z\",\n            \"updatedAt\": \"2022-05-13T07:49:26.299Z\"\n        },\n        {\n            \"id\": 5,\n            \"nama\": \"Katana\",\n            \"tipe\": \"Off Roader\",\n            \"deskripsi\": \"Black Matte Car\",\n            \"ukuran\": \"Small\",\n            \"available\": \"false\",\n            \"createdBy\": \"Fitri\",\n            \"deletedBy\": \"Fitri\",\n            \"updatedBy\": \"Fitri\",\n            \"createdAt\": \"2022-05-13T09:47:53.681Z\",\n            \"updatedAt\": \"2022-05-13T09:49:01.697Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/false",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"false"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:11:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Jeep\",\r\n    \"tipe\": \"Off Roader\",\r\n    \"deskripsi\": \"Red Car\",\r\n    \"ukuran\": \"Small\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cars/add-car",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"add-car"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin dan Admin untuk menambahkan data mobil."
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Jeep\",\r\n    \"tipe\": \"Off Roader\",\r\n    \"deskripsi\": \"Red Car\",\r\n    \"ukuran\": \"Small\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/cars/add-car",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"add-car"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "292"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"124-ajNsbBRapztCnSyTijiG8aIEJm4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:12:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Car successfully created.\",\n    \"data\": {\n        \"id\": 6,\n        \"nama\": \"Jeep\",\n        \"tipe\": \"Off Roader\",\n        \"deskripsi\": \"Red Car\",\n        \"ukuran\": \"Small\",\n        \"available\": \"true\",\n        \"createdBy\": \"Fitri\",\n        \"updatedAt\": \"2022-05-13T13:12:27.397Z\",\n        \"createdAt\": \"2022-05-13T13:12:27.397Z\",\n        \"deletedBy\": null,\n        \"updatedBy\": null\n    }\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Jeep\",\r\n    \"tipe\": \"Off Roader\",\r\n    \"deskripsi\": \"Red Car\",\r\n    \"ukuran\": \"Small\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/cars/add-car",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"add-car"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:13:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update car",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Suzuki Ertiga\",\r\n    \"tipe\": \"MPV\",\r\n    \"deskripsi\": \"Red Car\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cars/update/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"update",
+								"7"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin dan Admin untuk mengupdate data mobil."
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Suzuki Ertiga\",\r\n    \"tipe\": \"MPV\",\r\n    \"deskripsi\": \"Red Car\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/cars/update/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"update",
+										"7"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-9GnTClQYiCw3dVyI+Xztub4wnog\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:15:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Car sucessfully updated.\",\n    \"data\": {\n        \"nama\": \"Suzuki Ertiga\",\n        \"tipe\": \"MPV\",\n        \"deskripsi\": \"Red Car\",\n        \"ukuran\": \"Medium\"\n    }\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Suzuki Ertiga\",\r\n    \"tipe\": \"MPV\",\r\n    \"deskripsi\": \"Red Car\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/cars/update/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"update",
+										"7"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:16:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/cars/delete/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"delete",
+								"7"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin dan Admin untuk soft delete data mobil, yaitu mengubah \"available\" menjadi \"false\""
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/delete/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"delete",
+										"7"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-RVwqBFQdaNrkMMOWbdIvKh+VNlY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:17:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Car sucessfully deleted.\"\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpdHJpLWFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRaVUE3dWZLWHI2aWtPQVV4U2EwY1ZlVFN1d1R3amJabFVoaUZsbHhVVjVpdWxuVkVDVU9rdSIsImlhdCI6MTY1MjQzNTE2OX0.mZkpaAjLAXXv-X7a0xR-4UedvKKSS6QohO-gYdzSGtY",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/delete/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"delete",
+										"7"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:17:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				},
+				{
+					"name": "destroy car",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/cars/destroy/8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"destroy",
+								"8"
+							]
+						},
+						"description": "Hanya bisa diakses oleh Super Admin dan Admin untuk destroy data mobil sepenuhnya (sehingga tidak bisa diakses lagi)"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpYW5kcmEtc2FAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ1VTRRY05wajVEUjk2dklBTDE5VVlPbDdGTW14S0JZMW4vV3RKRmFzdk8yVEdvLlZjNlU2dSIsImlhdCI6MTY1MjQ0NjcxMX0.o-nR2Ihc49H6uxIqIlyBGJGMUlAKxRmMxGq4ITuL8po",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/cars/destroy/8",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"destroy",
+										"8"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-KT/hnVgbx2798ZYJdhl3Kd4grV0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:14:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Car sucessfully destroyed.\"\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/cars/destroy/8",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"destroy",
+										"8"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-q6cGyOBiwGshxQdcFRrR1zCi7Cw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 13:14:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"JsonWebTokenError\",\n    \"message\": \"jwt must be provided\"\n}"
+						}
+					]
+				}
+			],
+			"description": "Folder \"cars\" untuk mengurus request berkaitan dengan data mobil yang dilakukan oleuper Admin, Admin, dan member.\n\n*   Terdapat request **Get All Cars** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Get Cars (True)** yang hanya bisa dilakukan oleh user yang teregister (SuperAdmin, Admin, dan Member).\n*   Terdapat request **Get Cars (False)** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Add Car** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Update Car** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Delete Car** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Destroy Car** yang hanya bisa dilakukan oleh SuperAdmin dan Admin."
+		}
+	]
+}
